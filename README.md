@@ -1,8 +1,8 @@
-# FtHoF-Planner-v4
+# FtHoF-Planner-v5
 
 FtHoF Planner for Cookie Clicker by Orteil
 </br></br>
-<i>This version is compatible with version 2.048, "a mind of its own"  update that went live on 31-05-2022</i>
+<i>This version is compatible with version 2.052, "often imitated, never duplicated"  update that went live on 07-05-2023</i>
 
 <h3>Usage</h3>
 <div>
@@ -94,8 +94,8 @@ FtHoF Planner for Cookie Clicker by Orteil
             Switcher
         </li>
         <li>Added a checkbox for the "Supreme Intellect" dragon aura as this should influence the
-            positive/negative rate by 10% more negative. This is maybe a bug in the game but currently this
-            button is a placebo or a placeholder for future implementation. The game and the planner do
+            positive/negative rate by 10% more negative. <s>This is maybe a bug in the game but currently this
+            button is a placebo or a placeholder for future implementation</s>. The game and the planner do
             currently not step out of line when using the aura without any update to the planner.
         </li>
     </ul>
@@ -143,5 +143,12 @@ FtHoF Planner for Cookie Clicker by Orteil
                 </li>
             </ul>
         </li>
+		<li><a href="https://joseph3079.github.io/FtHoF-Planner-v5/">FtHoF planner v5</a> by
+                    <a href="https://discord.gg/cookie">@joseph3079</a> (discord)
+                    <ul>
+                        <li>The fifth version added a "Random Seed" column, which can be used to see how many onscreen cookies will cause a spell to backfire without needing to change settings repeatedly, and can be used to tell what Gambler's Fever Dream will give when it can't choose all 8 spells. Additionally, it now shows building specials, elder frenzies, and sugar lumps that aren't visible due to a wrong backfire chance.
+                        </li>
+                    </ul>
+                </li>
     </ul>
 </div>
