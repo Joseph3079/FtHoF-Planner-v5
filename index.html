@@ -292,6 +292,10 @@
             Supreme Intellect Aura Active
         </md-checkbox>
 
+        <md-checkbox ng-model="diminishineptitude" aria-label="Diminish Ineptitude Active">
+            Diminish Ineptitude Active
+        </md-checkbox>
+
 
         <md-divider></md-divider>
 
@@ -335,7 +339,7 @@
                         <md-list-item class="md-2-line" ng-repeat="cookie_list in cookies" ng-click="null">
                             <div class="md-list-item-text" layout="column">
                                 <a name="{{$index}}"></a>
-                                <h3>{{randomSeeds[$index].toFixed(4)}}</h3>
+                                <h3>{{randomSeeds[$index].toFixed(4) + " (" + (randomSeeds[$index]+baseBackfireChance>1 ? 0 : ((1.075-randomSeeds[$index]-baseBackfireChance)/0.15).toFixed(0)) + " GC)"}}</h3>
                             </div>
                         </md-list-item>
                     </md-list>

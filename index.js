@@ -58,6 +58,7 @@ app.controller('myCtrl', function ($scope) {
 	$scope.spellsCastThisAscension = 0
 	$scope.dragonflight = false
 	$scope.supremeintellect = false
+	$scope.diminishineptitude = false
 	$scope.on_screen_cookies = 0
 	$scope.min_combo_length = 2
 	$scope.max_combo_length = 4
@@ -110,7 +111,8 @@ app.controller('myCtrl', function ($scope) {
 	$scope.update_cookies = function () {
 		$scope.cookies = []
 		$scope.randomSeeds = [];
-		$scope.backfireChance = 0.15*($scope.supremeintellect?1.1:1)+0.15*$scope.on_screen_cookies;
+		$scope.baseBackfireChance = 0.15*($scope.supremeintellect?1.1:1)*($scope.diminishineptitude?0.1:1);
+		$scope.backfireChance = $scope.baseBackfireChance+0.15*$scope.on_screen_cookies;
 		$scope.displayCookies = [];
 		bsIndices = [];
 		skipIndices = [];
@@ -287,7 +289,7 @@ app.controller('myCtrl', function ($scope) {
 	function check_cookies(spells, season, chime, forcedGold) {
 		Math.seedrandom($scope.seed + '/' + spells);
 		roll = Math.random()
-		if (forcedGold !== false && (forcedGold || roll < (1 - 0.15 * ($scope.on_screen_cookies + 1 + 0.1*$scope.supremeintellect)))) {
+		if (forcedGold !== false && (forcedGold || roll < (1 - (0.15*$scope.on_screen_cookies + 0.15*(1 + 0.1*$scope.supremeintellect)*(1 - 0.9*$scope.diminishineptitude))))) {
 			/* Random is called a few times in setting up the golden cookie */
 			if (chime == 1 && $scope.ascensionMode != 1) Math.random();
 			if (season == 'valentines' || season == 'easter') {
