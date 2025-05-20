@@ -66,6 +66,17 @@ app.controller('myCtrl', function ($scope) {
 	//$scope.save_string = "Mi4wMTl8fDE1NTcwMjQwMjkzMjQ7MTUyNTU2Mzg4NjQ5ODsxNTU3MDI2MDY3NTI2O1ByZXR0eSBCaXNjdWl0O2ljb2NkfDExMTExMTExMTAwMTAwMTAwMDAxMHwzMTcyOTc5ODU2ODk2MS4wNzsyNDk5OTU5MzQxMDEyOTYuNjszNTE0OzgzMzc7Nzc3NzExMzQ3NDEzMDIuMjc7NzI2ODU7MDszOzEuNjMwODE0MDg0NjAwMTQxOGUrMTAxOzA7MDswOzA7MDsxMDg7MTE7MDswOzExOzE7MjU4MzAzNjsxO2NocmlzdG1hczswOzA7NS40NjM0NjQ4MjMyNzM2MjRlKzI5OzUuNDYzNDY0ODIzMjczNjI0ZSsyOTsxMDM0OTI0NTIwNTExOzA7MDsyMjY7MjI4OzIyMzsyMjI7MjI1OzU7MTswOzE7MTAwOzA7MDsxODk7NDY3OzE1NTcwMjM1NTE1NDY7MTU1Njk5MjAzMDQ0ODswOzEyOSwyMjc7NDA7fDE2MCwxNjAsMTg0MDI4NTc4NDIyMCwxLCwwOzE1MCwxNTAsNzE2NTA1ODQ0NTcwLDEsLDA7MTAwLDIxMCwyODczMDgyMzkzMyw5LDE1NTcwMjYyODY2MDQ6MDoxNTU3MDI0MDI5MzMxOjA6MDozNzM5OjE6MToxNTU3MDI0MDI5MzMxOiAxMTExMTAxMDExMTExMTAwMDAwMDEwMTEwMDAwMDAwMTAwIDA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOjA6MDowOiwwOzEwMCwyMDAsODg2MTIxODQ2MDMsMSwsMDsxMDAsMTgwLDE5NjIxNTUxOTQzMSwxLCwwOzgwLDE1MCw3MzUxMjI3MzcxNzcsMSwsMDs1MCw1MCwxNzUzMjgyNjI2MDA4LDEsMi8tMS8tMSAyIDE1NTcwMjU5NTgwMzQgMSwwOzUwLDUxLDY5OTUwMzAwMjc2NTksMSwzNiAwIDM1NTUgMSwwOzMwLDMwLDE5Njg2NTA3NjkzNjA0LDEsLDA7MTUsMTUsMjE5ODQxODMyNjA2NDIsMSwsMDsxMCwxMCwyMzI3OTQ1NzQyMDkyOCwxLCwwOzUsNSw1OTkyOTYzODI0OTY5OSwyLCwwOzAsMCwwLDQsLDA7MCwwLDAsMTAsLDA7MCwwLDAsNCwsMDswLDAsMCwxMCwsMDt8MTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMDAxMDEwMDAxMDEwMDAxMTExMTExMTExMTExMTExMTExMTExMTEwMDExMTExMTExMDAwMDAwMDAxMTExMTAxMTExMTExMTExMTExMTAwMDAxMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTExMTEwMDExMTEwMDAwMDAwMDExMDAxMTExMTAwMDEwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTAxMDEwMTAwMDExMTExMTExMDAwMDAwMDAwMDExMDAwMDAwMDAwMDAwMDAwMDAwMTAwMDAwMDAwMDAwMDAwMDExMDAxMTAwMTEwMDExMTExMTExMTEwMDAwMDAwMDExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAxMTExMTAxMDEwMDAxMDAwMDAxMDAwMTEwMDAwMDAwMDAwMDAwMDAwMDAxMTExMTExMTAwMDAwMDEwMTEwMDAwMDAxMTAwMDAwMDAwMDAwMDAwMTExMTAwMTExMTAwMTEwMDAwMDAxMTExMTExMTAwMDAxMTExMTExMTAwMDAxMTExMTExMDAwMDAxMTExMTExMTExMTEwMDAwMDAwMDAwMDAwMDAwMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTAxMDExMTExMTExMTExMTExMDAxMDAwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDExMTExMTExMTExMTExMTExMDExMTExMTExMDAwMDExMDAwMDEwMDAwMDAwMDAxMDAwMDAxMDAwMTAwMDEwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTExMTExMTAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTExMTExMTExMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDAwMDAwMDExMTExMTEwMDAwMDAwMDAwMDAwMDAwMDAwMTAwMDAwMDAwMDAwMDAwMDEwMTAxMDEwMTAxMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTExMTAwMDAwMDAwMDAxMTExMTExMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAxMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTEwMDExMTExMTExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTEwMTEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAxMTExMTExMXwxMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMDExMTExMTExMTExMTExMTExMTExMTExMTEwMDAwMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTEwMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTEwMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMDExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMDAwMDAwMDAwMDAwMDExMTEwMTExMTExMTExMTEwMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMDExMTExMTExMTExMTExMTExMTExMTExMTExMTExMDExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExfA%3D%3D%21END%21%3D%3D%21END%21"
 	$scope.save_string = ""
 	$scope.lookahead = 200
+	
+	$scope.loadParams = function () {
+		$scope.params = new URLSearchParams(document.location.search);
+		if($scope.params.get("seed") != null) {
+			$scope.seed = $scope.params.get("seed");
+			$scope.spellsCastTotal = parseInt($scope.params.get("spells"));
+			$scope.import_seed = $scope.seed;
+			$scope.import_spells = $scope.spellsCastTotal;
+			$scope.update_cookies();
+		}
+	}
 
 	$scope.load_more = function () {
 		$scope.lookahead += 50
@@ -86,27 +97,49 @@ app.controller('myCtrl', function ($scope) {
 		if (!str) {
 			str = $scope.save_string;
 		}
-		str = str.split('!END!')[0];
-		str = Base64.decode(str);
-		str = str.split('|');
-		spl = str[2].split(';');
-		$scope.seed = spl[4];
-		console.log($scope.seed);
+		if(str.length > 10) {
+			str = str.split('!END!')[0];
+			str = Base64.decode(str);
+			str = str.split('|');
+			spl = str[2].split(';');
+			$scope.seed = spl[4];
+			console.log($scope.seed);
 
-		spl = str[4].split(';');
-		$scope.ascensionMode = parseInt(spl[29]);
-		console.log(spl);
-		spl = str[5].split(';');
-		console.log(spl[7]);
+			spl = str[4].split(';');
+			$scope.ascensionMode = parseInt(spl[29]);
+			console.log(spl);
+			spl = str[5].split(';');
+			console.log(spl[7]);
 
-		$scope.spellsCastTotal = parseInt(spl[7].split(' ')[2]) || 0;
-		console.log('Total spells cast: ' + $scope.spellsCastTotal);
+			$scope.spellsCastTotal = parseInt(spl[7].split(' ')[2]) || 0;
+			console.log('Total spells cast: ' + $scope.spellsCastTotal);
 
-		$scope.spellsCastThisAscension = parseInt(spl[7].split(' ')[1]) || 0;
-		console.log('Spells cast this ascension: ' + $scope.spellsCastThisAscension);
+			$scope.spellsCastThisAscension = parseInt(spl[7].split(' ')[1]) || 0;
+			console.log('Spells cast this ascension: ' + $scope.spellsCastThisAscension);
+			
+			$scope.import_seed = $scope.seed;
+			$scope.import_spells = $scope.spellsCastTotal;
+		}
+		else {
+			$scope.seed = $scope.import_seed;
+			$scope.spellsCastTotal = parseInt($scope.import_spells);
+		}
 
 		$scope.update_cookies();
 	}
+	
+	$scope.showSeedHelp = function (ev) {
+		$mdDialog.show(
+			$mdDialog.alert()
+			.parent(angular.element(document.querySelector('.content')))
+			.clickOutsideToClose(true)
+			.title('Seed Input')
+			.textContent("If you play on PC, you can just import your save file, which will include your seed and total spells cast. If you play on console, you can't export your save file, so you'll need another way to find your game seed. You can use [this program](https://staticvariablejames.github.io/SeedCracker/) to find your seed for the current ascension.")
+			.ariaLabel('Alert Dialog Demo')
+			.ok('Got it!')
+			.targetEvent(ev)
+		);
+    };
 
 	$scope.update_cookies = function () {
 		$scope.cookies = []
@@ -174,6 +207,8 @@ app.controller('myCtrl', function ($scope) {
 			$scope.combos[combo_length] = findCombos(combo_length, $scope.max_spread, bsIndices, skipIndices);
 		}
 		
+		//$scope.combos = advancedFindCombos($scope.cookies,10,1000);
+		
 		console.log('Combos: ');
 		console.log($scope.combos);
 		console.log(Date.now()-currentTime);
@@ -223,6 +258,168 @@ app.controller('myCtrl', function ($scope) {
 			shortest: {idx: shortestStart, length: shortestDistance},
 			first: {idx: firstStart, length: firstDistance}
 		};
+	}
+	
+	function calcMaxMagic(level, towers) {
+		return Math.floor(4+Math.pow(towers,0.6)+15*Math.log(1+(towers+10*level-10)/15));
+	}
+	
+	// Old function from when I thought I could update the combo finder. I may look at this again at some point, but I don't even remember how this function worked.
+	function advancedFindCombos(cookies, towerLevel, maxTowers) {
+		let maxMagic = calcMaxMagic(towerLevel, maxTowers);
+		let minMagic = calcMaxMagic(towerLevel, 1);
+		let lumpRefills = 0;
+		let maxGFDclicks = 5;
+		let GFDoffsetAbuse = false;
+		
+		let bestCombos = [];
+		
+		let bsAvailable = [];
+		let cfAvailable = [];
+		let efAvailable = [];
+		for (let i = 0; i < $scope.lookahead; i++) {
+			if ($scope.cookies[i][0].type == "Building Special" || $scope.cookies[i][1].type == "Building Special") {
+				bsAvailable.push(1);
+			}
+			else {bsAvailable.push(0);}
+			if ($scope.cookies[i][0].type == "Click Frenzy" || $scope.cookies[i][1].type == "Click Frenzy") {
+				cfAvailable.push(1);
+			}
+			else {cfAvailable.push(0);}
+			if ($scope.cookies[i][0].type == "Elder Frenzy" || $scope.cookies[i][1].type == "Elder Frenzy") {
+				efAvailable.push(1);
+			}
+			else {efAvailable.push(0);}
+		}
+		
+		let spellCosts = [];
+		let percentages = [0.4,0.6,0.2,0.75,0.1,0.2,0.1,0.2];
+		let flatCosts = [2,10,8,20,10,10,20,5];
+		for (let i = minMagic; i <= maxMagic; i++) {
+			for (let j = 0; j < 8; j++) {
+				spellCosts[i].push(Math.floor(0.9*(i*percentages[j]+flatCosts[j])));
+			}
+		}
+		
+		for (let i = 0; i < 1; i++) {
+			let currentCombos = [];
+			currentCombos.push({bsCount:0, cf:false, ef:false, magic:maxMagic, lumpsRemaining:lumpRefills, currentSpell:i, maxOnscreens:0, di:false});
+			let keepSearching = true;
+			while (keepSearching) {
+				keepSearching = false;
+				let newCombos = [];
+				let currentBestCombo = {};
+				for (let j = 0; j < currentCombos.length; j++) {
+					let currSpell = currentCombos[j].currentSpell;
+					if (currSpell > $scope.lookahead) {continue;}
+					if (bsAvailable[currSpell] == 1) {
+						let maxGCs = Math.ceil((1-(.165*(currentCombos[j].di?0.1:1))-$scope.randomSeeds[currSpell])/.15);
+						let spellCost = Math.floor((0.6*Math.max(currentCombos[j].magic,minMagic)+10)*.9);
+						if (currentCombos[j].magic >= spellCost && maxGCs > 0) {
+							newCombos.push({bsCount:currentCombos[j].bsCount+1, cf:currentCombos[j].cf, ef:currentCombos[j].ef, magic:currentCombos[j].magic-spellCost, lumpsRemaining:currentCombos[j].lumpsRemaining, currentSpell:currSpell+1, maxOnscreens:Math.min(currentCombos[j].maxOnscreens+1,maxGCs), di:currentCombos[j].di});
+						}
+						else if (lumpsRemaining > 0 && maxGCs > 0) {
+							let newMagic = Math.min(currentCombos[j].magic+100,maxMagic);
+							let spellCost = Math.floor((0.6*Math.max(newMagic,minMagic)+10)*.9);
+							if (newMagic >= spellCost) {
+								newCombos.push({bsCount:currentCombos[j].bsCount+1, cf:currentCombos[j].cf, ef:currentCombos[j].ef, magic:newMagic-spellCost, lumpsRemaining:currentCombos[j].lumpsRemaining-1, currentSpell:currSpell+1, maxOnscreens:Math.min(currentCombos[j].maxOnscreens+1,maxGCs), di:currentCombos[j].di});
+							}
+						}
+					}
+					if (cfAvailable[currSpell] == 1 && currentCombos[j].cf == false) {
+						let maxGCs = Math.ceil((1-(.165*(currentCombos[j].di?0.1:1))-$scope.randomSeeds[currSpell])/.15);
+						let spellCost = Math.floor((0.6*Math.max(currentCombos[j].magic,minMagic)+10)*.9);
+						if (currentCombos[j].magic >= spellCost && maxGCs > 0) {
+							newCombos.push({bsCount:currentCombos[j].bsCount, cf:true, ef:currentCombos[j].ef, magic:currentCombos[j].magic-spellCost, lumpsRemaining:currentCombos[j].lumpsRemaining, currentSpell:currSpell+1, maxOnscreens:Math.min(currentCombos[j].maxOnscreens+1,maxGCs), di:currentCombos[j].di});
+						}
+						else if (lumpsRemaining > 0 && maxGCs > 0) {
+							let newMagic = Math.min(currentCombos[j].magic+100,maxMagic);
+							let spellCost = Math.floor((0.6*Math.max(newMagic,minMagic)+10)*.9);
+							if (newMagic >= spellCost) {
+								newCombos.push({bsCount:currentCombos[j].bsCount, cf:true, ef:currentCombos[j].ef, magic:newMagic-spellCost, lumpsRemaining:currentCombos[j].lumpsRemaining-1, currentSpell:currSpell+1, maxOnscreens:Math.min(currentCombos[j].maxOnscreens+1,maxGCs), di:currentCombos[j].di});
+							}
+						}
+					}
+					if (efAvailable[currSpell] == 1 && currentCombos[j].ef == false) {
+						if ((.165*(currentCombos[j].di?0.1:1) + $scope.randomSeeds[currSpell] + .15*currentCombos[j].maxOnscreens) > 1) {
+							let spellCost = Math.floor((0.6*Math.max(currentCombos[j].magic,minMagic)+10)*.9);
+							if (currentCombos[j].magic >= spellCost) {
+								newCombos.push({bsCount:currentCombos[j].bsCount, cf:currentCombos[j].cf, ef:true, magic:currentCombos[j].magic-spellCost, lumpsRemaining:currentCombos[j].lumpsRemaining, currentSpell:currSpell+1, maxOnscreens:currentCombos[j].maxOnscreens+1, di:currentCombos[j].di});
+							}
+							else if (lumpsRemaining > 0) {
+								let newMagic = Math.min(currentCombos[j].magic+100,maxMagic);
+								let spellCost = Math.floor((0.6*Math.max(newMagic,minMagic)+10)*.9);
+								if (newMagic >= spellCost) {
+									newCombos.push({bsCount:currentCombos[j].bsCount, cf:currentCombos[j].cf, ef:true, magic:newMagic-spellCost, lumpsRemaining:currentCombos[j].lumpsRemaining-1, currentSpell:currSpell+1, maxOnscreens:currentCombos[j].maxOnscreens+1, di:currentCombos[j].di});
+								}
+							}
+						}
+					}
+					let addedHagglers = false;
+					if ((currentCombos[j].di == false && $scope.randomSeeds[currSpell] < 0.835) || (currentCombos[j].di == true && $scope.randomSeeds[currSpell] < 0.9835 && currentCombos[j].magic < 50)) {
+						let spellCost = Math.floor((0.2*Math.max(currentCombos[j].magic,minMagic)+5)*.9);
+						if (currentCombos[j].magic >= spellCost) {
+							newCombos.push({bsCount:currentCombos[j].bsCount, cf:currentCombos[j].cf, ef:currentCombos[j].ef, magic:currentCombos[j].magic-spellCost, lumpsRemaining:currentCombos[j].lumpsRemaining, currentSpell:currSpell+1, maxOnscreens:currentCombos[j].maxOnscreens, di:true});
+						}
+						else if (lumpsRemaining > 0) {
+							let newMagic = Math.min(currentCombos[j].magic+100,maxMagic);
+							let spellCost = Math.floor((0.2*Math.max(newMagic,minMagic)+5)*.9);
+							if (newMagic >= spellCost) {
+								newCombos.push({bsCount:currentCombos[j].bsCount, cf:currentCombos[j].cf, ef:currentCombos[j].ef, magic:newMagic-spellCost, lumpsRemaining:currentCombos[j].lumpsRemaining-1, currentSpell:currSpell+1, maxOnscreens:currentCombos[j].maxOnscreens, di:true});
+							}
+						}
+					}
+					else {
+						let spellCost = Math.floor((0.1*Math.max(currentCombos[j].magic,minMagic)+10)*.9);
+						if (currentCombos[j].magic >= spellCost) {
+							newCombos.push({bsCount:currentCombos[j].bsCount, cf:currentCombos[j].cf, ef:currentCombos[j].ef, magic:currentCombos[j].magic-spellCost, lumpsRemaining:currentCombos[j].lumpsRemaining, currentSpell:currSpell+1, maxOnscreens:currentCombos[j].maxOnscreens, di:currentCombos[j].di});
+						}
+						else if (lumpsRemaining > 0) {
+							let newMagic = Math.min(currentCombos[j].magic+100,maxMagic);
+							let spellCost = Math.floor((0.1*Math.max(newMagic,minMagic)+10)*.9);
+							if (newMagic >= spellCost) {
+								newCombos.push({bsCount:currentCombos[j].bsCount, cf:currentCombos[j].cf, ef:currentCombos[j].ef, magic:newMagic-spellCost, lumpsRemaining:currentCombos[j].lumpsRemaining-1, currentSpell:currSpell+1, maxOnscreens:currentCombos[j].maxOnscreens, di:currentCombos[j].di});
+							}
+						}
+						addedHagglers = true;
+					}
+					if (!addedHagglers && currentCombos[j].magic > 50) {
+						let spellCost = Math.floor((0.1*Math.max(currentCombos[j].magic,minMagic)+10)*.9);
+						if (currentCombos[j].magic >= spellCost) {
+							newCombos.push({bsCount:currentCombos[j].bsCount, cf:currentCombos[j].cf, ef:currentCombos[j].ef, magic:currentCombos[j].magic-spellCost, lumpsRemaining:currentCombos[j].lumpsRemaining, currentSpell:currSpell+1, maxOnscreens:currentCombos[j].maxOnscreens, di:currentCombos[j].di});
+						}
+						else if (lumpsRemaining > 0) {
+							let newMagic = Math.min(currentCombos[j].magic+100,maxMagic);
+							let spellCost = Math.floor((0.1*Math.max(newMagic,minMagic)+10)*.9);
+							if (newMagic >= spellCost) {
+								newCombos.push({bsCount:currentCombos[j].bsCount, cf:currentCombos[j].cf, ef:currentCombos[j].ef, magic:newMagic-spellCost, lumpsRemaining:currentCombos[j].lumpsRemaining-1, currentSpell:currSpell+1, maxOnscreens:currentCombos[j].maxOnscreens, di:currentCombos[j].di});
+							}
+						}
+					}
+					for (let k = minMagic; k <= maxMagic; k++) {
+						let currMagic = Math.min(k,currentCombos[j].magic);
+						let GFDcost = Math.floor(0.9*(0.05*k+3));
+						let currEligibleSpells = [];
+						let queuedGFDs = [];
+						for (let l = 1; l <= maxGFDclicks; l++) {
+							currMagic -= GFDcost;
+							for (let m = 0; m < 8; m++) {
+								if (currMagic >= spellCosts[k][m]/2) {
+									currEligibleSpells.push(m);
+								}
+							}
+							if (currEligibleSpells.length == 0) {break;}
+							queuedGFDs.push(currEligibleSpells[Math.floor($scope.randomSeeds[currSpell+l-1]*currEligibleSpells.length)]);
+							if (currMagic >= spellCosts[k][1]) {
+								
+							}
+						}
+					}
+				}
+				currentCombos = newCombos;
+			}
+		}
+		return bestCombos;
 	}
 
 	function cookiesContainBuffs(include_ef, ...cookies) {
